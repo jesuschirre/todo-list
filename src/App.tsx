@@ -40,6 +40,7 @@ function App() {
       title: newTodo,
       completed: false,
     };
+    
 
     fetch(url, {
       method: "POST",
@@ -94,8 +95,6 @@ function App() {
       setTodo(updatedTodos);
       setEditIndex(null);
       setEditTodo("");
-
-      // Podrías hacer un PUT o PATCH al backend si quieres sincronizarlo
     }
   };
 
